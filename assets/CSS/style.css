@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Old Standard TT', serif;
+}
+
+/* Some general style for different markers */
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, .highlight {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.highlight, h2 {
+  font-weight: 500;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Section placement and style */
+header {
+  width: 100vw;
+  overflow: hidden;
+}
+header nav {
+  padding-left: 40px;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav ul li {
+  text-align: center;
+  padding: 10px 0;
+  margin-right: 10%;
+  transition: all 1s ease;
+}
+header nav ul li a {
+  font-family: 'Oswald', sans-serif;
+  color: #25292f;
+  position: relative;
+}
+header nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0em;
+  height: 0.1em;
+  top: 110%;
+  left: calc(50% - 2em);
+  background-color: #4ABDC2;
+  transition: all ease 0.5s;
+}
+header nav ul li a:hover:before {
+  width: 4em;
+}
+header nav ul li a:hover {
+  color: #4ABDC2;
+}
+header h1 {
+  margin-left: 40px;
+  color: #F47213;
+  font-size: 4rem;
+  width: 60%;
+}
+header #rev-1 {
+  font-weight: 100;
+}
+
+section {
+  padding: 20px 0;
+  position: relative;
+  height: 70vh;
+}
+section h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  position: absolute;
+  top: -25px;
+  right: 8%;
+}
+
+#workWrapper, canvas, #contactWrapper {
+  padding-top: 56px;
+}
+
+#work {
+  background-color: #4ABDC2;
+  color: white;
+}
+#work #workWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100%;
+}
+#work #workWrapper a {
+  width: 316px;
+  height: 150px;
+}
+#work #workWrapper a .workBox {
+  text-align: center;
+  overflow: hidden;
+  transition: all 1s ease;
+  padding: 5px;
+  position: relative;
+}
+#work #workWrapper a .workBox img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+#work #workWrapper a .workBox .workDescr {
+  top: 30px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+}
+#work #workWrapper a .workBox p {
+  opacity: 0;
+  color: #25292f;
+  padding-top: 10px;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+#work #workWrapper a .workBox h3 {
+  transition: all 1s ease;
+  font-size: 3em;
+  position: absolute;
+  width: 50%;
+  left: calc(50% - 25%);
+  color: white;
+  padding-top: 5px;
+}
+#work #workWrapper a .workBox:hover h3 {
+  opacity: 0;
+}
+#work #workWrapper a .workBox:hover p {
+  opacity: 1;
+}
+#work #workWrapper a .workBox:hover {
+  box-shadow: inset 0 -316px rgba(255, 255, 255, 0.6);
+}
+#work #workWrapper a .workBox:hover img {
+  opacity: 0.2;
+}
+
+#skills {
+  background-color: #4ABDC2;
+  color: white;
+  position: relative;
+}
+#skills canvas {
+  margin-left: calc( 50% - 315px);
+}
+#skills .skillsSet {
+  position: absolute;
+  top: 440px;
+  left: calc(50% - 310px);
+}
+#skills .skillsSet ul {
+  display: flex;
+  width: 800px;
+}
+#skills .skillsSet ul li {
+  font-family: 'Oswald', sans-serif;
+  color: #25292f;
+  width: 10%;
+  text-align: center;
+}
+#skills .skillsSet ul li:first-child {
+  margin-left: 67px;
+}
+
+#about {
+  margin-top: 20px;
+  height: 50vh;
+  color: #25292f;
+}
+#about #aboutWrapper {
+  padding-left: 40px;
+}
+#about #aboutWrapper .block-revealer__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  pointer-events: none;
+}
+#about #aboutWrapper .block-revealer__content {
+  font-family: 'Old Standard TT', sans-serif;
+}
+#about #aboutWrapper .aboutBox span {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+#about #aboutWrapper .aboutBox h2, #about #aboutWrapper .aboutBox .h2like {
+  font-size: 3rem;
+  padding-left: 0;
+}
+
+#contact {
+  background-color: #25292f;
+  color: white;
+}
+#contact #contactWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#contact #contactWrapper .contactBox {
+  width: 20%;
+  padding-top: 15vh;
+  text-align: center;
+}
+#contact .icon {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  stroke-width: 0;
+  stroke: white;
+  fill: white;
+}
+#contact p {
+  margin-top: 20px;
+}
+#contact a {
+  color: white;
+}
+
+/* Javascript-classes */
+.block-revealer__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  pointer-events: none;
+}
+
+.block-revealer__content {
+  font-family: 'Oswald', cursive;
+}
+
+/*# sourceMappingURL=style.css.map */
