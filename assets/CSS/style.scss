@@ -103,6 +103,8 @@ section {
 			width: 316px;
 			height: 150px;
 			.workBox {
+				width: 100%;
+				height: 100%;
 				text-align: center;
 				overflow: hidden;
 				transition: all 1s ease;
@@ -222,15 +224,10 @@ section {
 			width: 20%;
 			padding-top: 15vh;
 			text-align: center;
+			.fa {
+			font-size: 7rem;
+			}
 		}
-	}
-	.icon {
-	  display: inline-block;
-	  width: 10em;
-	  height: 10em;
-	  stroke-width: 0;
-	  stroke: white;
-	  fill: white;
 	}
 	p {
 		margin-top: 20px;
