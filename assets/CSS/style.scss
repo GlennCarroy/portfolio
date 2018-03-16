@@ -96,17 +96,16 @@ section {
 	color: white;
 	#workWrapper {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		flex-wrap: wrap;
 		height: 100%;
 		a {
-			width: 316px;
-			height: 150px;
+			width: 300px;
+			height: 156px;
 			.workBox {
 				width: 100%;
 				height: 100%;
 				text-align: center;
-				overflow: hidden;
 				transition: all 1s ease;
 				padding: 5px;
 				position: relative;
@@ -117,7 +116,7 @@ section {
 					opacity: 0;
 				}
 				.workDescr {
-					top:  30px;
+					top: 30px;
 					padding: 10px;
 					position: absolute;
 					text-align: center;
@@ -131,12 +130,16 @@ section {
 				}
 				h3 {
 					transition: all 1s ease;
-					font-size: 3em;
+					font-size: 2.7em;
 					position: absolute;
-					width: 50%;
+					width: 150px;
+					height: 120px;
+					padding-top: 30px;
 					left: calc(50% - 25%); 
-					color: white;
-					padding-top: 5px;
+					color: #4ABDC2;
+					background-color: white;
+					border-radius: 50%;
+					line-height: 1;
 				}
 				&:hover h3 {
 					opacity: 0;
